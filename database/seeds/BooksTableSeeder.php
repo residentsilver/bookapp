@@ -14,14 +14,14 @@ class BooksTableSeeder extends Seeder
     {
         $param =[
             'id' =>1,
-            'name' =>'情報処理教科書 出るとこだけ！基本情報技術者［科目B］第4版',
+            'name' =>'情報処理教科書 出るとこだけ 基本情報技術者 科目B 第4版',
             'price' =>1980,
         ];
         DB::table('people')->insert($param);
 
         $param =[
             'id' =>2,
-            'name' =>'うかる！ 基本情報技術者　[科目B・アルゴリズム編]　2023年版 福嶋先生の集中ゼミ',
+            'name' =>'うかる！ 基本情報技術者 [科目B・アルゴリズム編] 2023年版 福嶋先生の集中ゼミ',
             'price' =>1680,
         ];
         DB::table('people')->insert($param);
