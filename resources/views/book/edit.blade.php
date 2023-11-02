@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+
 @if (count($errors) >0)
 <div>
     <ul>
@@ -18,6 +19,7 @@
     </ul>
 </div>
 @endif
+
 <form action="/book/edit" method="post">
 <table>
     @csrf

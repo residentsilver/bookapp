@@ -8,6 +8,7 @@
 @endsection
 
 @section('content')
+
 {{-- validate --}}
 @if (count($errors) >0)
 <div>

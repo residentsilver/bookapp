@@ -8,6 +8,7 @@
     @parent
     検索結果を表示
 @endsection
+
 {{-- 検索結果を表示している --}}
 @section('content')
     <form action="/book/find" method="post">

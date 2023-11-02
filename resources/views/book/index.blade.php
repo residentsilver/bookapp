@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<p>本の名前を入力しよう。</p>
+<p>本の名前を入力して検索できる。</p>
 <form action="/book/find" method="post">
   @csrf
   <input type="text" name="input" value="">
@@ -49,14 +49,14 @@
 <table>
   
   {{-- validateしている --}}
-  @if (count($errors) >0)
-<div>
+@if (count($errors) >0)
+  <div>
     <ul>
         @foreach ($errors->all() as $error)
         <li>{{$error}}</li>
         @endforeach
     </ul>
-</div>
+  </div>
 @endif
 
 {{--追加フォーム--}}

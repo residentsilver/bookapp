@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    // エラー対策
+//     // エラー対策
     protected $guarded = array('id');
 
     // validateのルール設定
@@ -15,7 +15,10 @@ class Book extends Model
         'name' =>'required' ,
         'price' => 'integer|min:0|max:150000'
     );
-    public $timestamps = false; //これがあることで、'created_at' 'updated_at'の情報を生成しないようにしている　DB上にカラムを用意していない場合に効果的
+
+    //これがあることで、'created_at' 'updated_at'の情報を生成しないようにしている
+    //DB上にカラムを用意していない場合に効果的
+    public $timestamps = false; 
 
     //nameequalを使えるようにしている
     public function scopeNameEqual($query, $str)
