@@ -4,7 +4,10 @@
 <style>
     body {font-size: 16pt; 
         color: #999; 
-        margin: 5px; 
+        margin: 0 auto; 
+        width: 1000px;
+        
+
     }
     h1 {font-size: 50pt ; 
         text-align: right; 
@@ -50,16 +53,23 @@
             width: 20px;
             text-align: center;
         }
-
-        input{
-            
+        
+        input.del{
+            margin-top: 15px;
         }
+
+        input.add{
+            margin-left:500px; 
+        }
+
+
 </style>
 </head>
 <body>
-    <h1>ボーダーコリー
-    </h1>
+    <h1>ボーダーコリー</h1>
+
     @section('menubar')
+    <a href="/book">トップページ</a>
     <h2 class="menutitle">※メニュー</h2>
     <ul>
         <li>@show</li>

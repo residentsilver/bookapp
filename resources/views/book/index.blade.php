@@ -37,11 +37,11 @@
               <input type="submit" value="更新する">
             </form>
             </td>
-            <td>
+            <td class="del">
               <form action="book/del" method="post">
                 @csrf
                 <input type="hidden" name="id" value="{{$item->id}}">
-              <input type="submit" value="削除する">
+              <input class="del" type="submit" value="削除する">
             </form></td>
         </tr>
     @endforeach
@@ -68,7 +68,7 @@
     <td><input type="number" name="price" value="{{old('price')}}"></td>
 </tr>
 </table>
-      <input type="submit" value="追加ボタン">
+      <input class="add" type="submit" value="追加ボタン">
 </form>
 
 
